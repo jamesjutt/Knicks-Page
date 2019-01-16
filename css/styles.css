@@ -1,0 +1,788 @@
+@charset "utf-8";
+
+/*
+    Stylesheet for Knicks page
+    Author: James Jutt
+    Date: 1/8/19
+*/
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.header-font {
+    font-family: 'Coiny', cursive;
+}
+
+/* START OF NAVIGATION BAR SECTION STYLING */
+
+a#navbrand {
+    position: relative;
+    font-family: 'Coiny', cursive;
+    left: 20px;
+    float: left;
+    padding-left: 10px;
+    color: #F58426;
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: black 2px 2px;
+    transition: all 1s;
+}
+
+a#navbrand:hover {
+    color: #006BB6;
+    font-size: 23px;
+    text-shadow: black 2px 2px;
+}
+
+nav.navbar {
+    z-index: 999;
+    margin-top: -100px;
+}
+
+a.nav-item a.nav-link {
+    padding-right: 1px;
+}
+
+nav.navbar-light div.navbar-nav a.nav-link {
+    color: #F58426;
+    font-family: 'Coiny', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 2px;
+    text-shadow: black 2px 2px;
+    transition: all 1s;
+}
+
+nav.navbar-light div.navbar-nav a.nav-link:hover {
+    color: #006BB6;
+    font-size: 22px;
+    text-shadow: black 3px 3px;
+}
+
+a.nav-item {
+    padding: 0px 8px;
+}
+
+img#nav-logo {
+    transform: rotateZ(0deg);
+    transition: all 2s;
+}
+
+img#nav-logo:hover {
+    transform: rotateZ(360deg);
+}
+
+div.navbar-nav {
+    position: block;
+    left: 355px;
+    margin-left: auto;
+}
+
+button.navbar-toggler {
+    border: none;
+    cursor: pointer;
+}
+
+nav.navbar-light span.navbar-toggler-icon {
+    background-image: url(../images/backgrounds/hamburger.svg);
+    transform: rotateZ(0deg);
+    transition: all 1s;
+}
+
+nav.navbar-light span.navbar-toggler-icon:hover {
+    background-image: url(../images/backgrounds/hamburger.svg);
+    transform: rotateZ(180deg);
+}
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+    nav.navbar-light div.navbar-nav a.nav-link {
+        text-align: center;
+        padding-left: 7%;
+    }
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+
+@media only screen and (min-width: 481px) {
+    nav.navbar-light div.navbar-nav a.nav-link {
+        text-align: center;
+    }
+}
+
+
+/* END OF NAVIGATION BAR SECTION STYLING */
+
+/* START OF HERO IMAGE SECTION STYLING */
+
+div.main {
+    background-image: url(../images/backgrounds/nyc.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    height: 850px;
+    z-index: 0;
+    padding-top: 100px;
+    padding-bottom: -20px;
+}
+
+div.hero-info {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    font-family: 'Do Hyeon', sans-serif;
+    padding-top: 90px;
+    text-align: center;
+}
+
+h1#myTitle {
+    font-size: 70px;
+    color: #006BB6;
+    text-shadow: black 5px 5px;
+    padding-left: 29px;
+}
+
+p#info {
+    color: #F58426;
+    font-weight: bolder;
+    text-shadow: black 4px 4px;
+    font-size: 30px;
+}
+
+button#myBtn {
+    color: #F58426;
+    background-color: #006BB6;
+    border-radius: 20px;
+    text-shadow: black 1.5px 1.5px;
+    font-size: 22px;
+    font-weight: bold;
+    width: 175px;
+    height: 63px;
+    transition: all 1s;
+    border: 2px solid black;
+}
+
+button#myBtn:hover {
+    color: #006BB6;
+    width: 230px;
+    height: 73px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    text-shadow: black 1.5px 1.5px;
+    background-color: #F58426;
+}
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+    h1#myTitle {
+        font-size: 48px;
+        padding-left: 0px;
+    }
+    div.main {
+        width: 100%;
+        background-attachment: scroll;
+    }
+    p#info {
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
+
+/* ===================================================
+	Tablet and Desktop Devices: 481px - 767px
+   ===================================================
+*/
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    h1#myTitle {
+        font-size: 48px;
+    }
+    p#info {
+        font-size: 26px;
+        padding-left: 14px;
+    }
+}
+
+/* END OF HERO IMAGE SECTION STYLING */
+
+/* START OF ROSTER SECTION STYLING */
+
+section.roster-section {
+    background-image: url(../images/Backgrounds/stars.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1#myRoster {
+    text-align: center;
+    padding-top: 22px;
+    color: #F58426;
+    text-shadow: black 4px 4px;
+    font-size: 56px;
+    transition: all 1s;
+}
+
+h1#myRoster:hover {
+    color: white;
+}
+
+/* h2.cardFront {
+    color: #F58426;
+    text-shadow: black 3px 3px;
+    font-size: 21px;
+} */
+
+h3.cardBack {
+    color: #F58426;
+    text-shadow: black 2px 2px;
+    letter-spacing: 1px;
+}
+
+div.card-box {
+    background-color: transparent;
+    width: 350px;
+    height: 552px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+div.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+div.card-box:hover div.inner {
+    transform: rotateY(180deg);
+}
+
+div.front, div.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+div.front {
+    background-image: linear-gradient(to right top, #306ab8, #008cd6, #00a8c9, #00bf90, #15ce36);    border-radius: 20px;
+    color: black;
+}
+
+img.player-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+div.back {
+    padding-top: 80px;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);    
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Notable', sans-serif;
+    font-size: 42px;
+    transform: rotateY(180deg);
+}
+
+/* ============================================
+	Mobile Devices: 0 - 800 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 800px) {
+    div.card-box {
+        padding-left: 39px;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    div.card-box:active div.inner {
+        transform: rotateY(180deg);
+    }
+    h3.cardBack {
+        font-size: 40%;
+        text-shadow: black 3px 3px;
+        font-weight: normal;
+    }
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 801 pixels
+   ===================================================
+*/
+
+@media only screen and (min-width: 801px) {
+    div.card-box{
+        width: 33%;
+    }
+    h3.cardBack {
+        font-size: 43%;
+        letter-spacing: 0px;
+    }
+    img.player-card {
+        height: 100%;
+    }
+}
+
+/* END OF ROSTER SECTION STYLING */
+
+/* START OF GAMES SECTION STYLING */
+
+section#games {
+    padding-bottom: 20px; 
+}
+
+h1#uGames {
+    color: #F58426;
+    text-shadow: black 4px 4px;
+    font-size: 48px;
+    padding-top: 13px;
+    text-align: center;
+    transition: all 1s;
+}
+
+h1#uGames:hover {
+    color: white;
+}
+
+section.games-section {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);    
+    font-size: 25px; 
+    background-attachment: fixed;
+}
+
+table#games-table {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);    
+    border: 3px solid white;
+    font-size: 25px; 
+    width: 100%;
+}
+
+td {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);    
+    border: 2px solid white;
+}
+
+table#games-table caption {
+    caption-side: top;
+    color: white;
+    font-family: 'Coiny', cursive;
+    text-shadow: black 3px 3px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-left: 10px;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+ 
+th.game-weekdays {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    width: 15%;
+    font-family: 'Coiny', cursive;
+    font-weight: bold;
+    font-size: 17px; 
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid white;
+ }
+ 
+td.game-dates {
+    text-align: center; 
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    vertical-align: top;
+    font-family: 'Markazi Text', serif;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+    border: 3px solid white;
+    height: 60px;
+ }
+
+td, th, tr {
+    border: 2px solid white;
+}
+
+hr {
+    background-color: white;
+    height: 1px;
+}
+ 
+td#game-today {
+    font-weight: bold; 
+    color: rgb(51, 51, 51);
+    background-color: blue !important;
+    border: 4px solid black;
+ } 
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+    h1#uGames {
+        padding: 0px 0px;
+        font-size: 32px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    div.upcoming {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0px 0px;
+    }
+    div#upcoming-games {
+        width: 100%;
+    }
+ }
+
+/* =====================================================
+	Tablet and Desktop Devices: Between 481px and 991px
+   =====================================================
+*/
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+    div#upcoming-games {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+    }
+    h1#uGames {
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 42px;
+    }
+}
+
+/* END OF GAMES SECTION STYLING */
+
+/* START OF HISTORY SECTION STYLING */
+
+section#history {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    background-image: url(../images/Backgrounds/stars.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    z-index: 0;
+}
+
+div.content-wrap {
+    border: 2px solid black;
+    z-index: 999;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    border-radius: 20px;
+    padding-top: 28px;
+    padding-bottom: 38px;
+    box-shadow: black 3px 3px 3px 3px;
+    background-image: linear-gradient(to right, rgba(42, 107, 135, .8), rgba(54, 59, 94, .8));
+    width: 50%;
+    transition: all .5s;
+}
+
+div.content-wrap:hover {
+    border-radius: 100px;
+}
+
+h1#history-head {
+    text-align: center;
+    color: #F58426;
+    font-family: 'Coiny', cursive; 
+    text-shadow: black 4px 4px;
+    font-size: 48px;
+    transition: all 1s;
+}
+
+h1#history-head:hover {
+    color: white;
+}
+
+p.my-content {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    text-shadow: black 2px 2px;
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: 0px - 675px
+   ===================================================
+*/
+
+@media screen and (max-width: 675px){
+    div.content-wrap {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+/* END OF HISTORY SECTION STYLING */
+
+/* START OF CONTACT SECTION STYLING */
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+section#contact {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-left: 500px;
+}
+
+div#wrap {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3#contactThree {
+    color: #F58426;
+    text-shadow: black 4px 4px;
+    padding-top: 20px;
+    font-size: 48px;
+    transition: all 1s;
+}
+
+h3#contactThree:hover {
+    color: white;
+}
+
+div.contactCon {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+::placeholder {
+    color: black;
+}
+
+#contact input, #contact textarea {
+    border: 3px solid black;
+    width: 100%;
+    background-color: rgba(30, 108, 182, .1);
+    padding: 20px 0px;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transition: all ease-in .5s;
+}
+
+#contact input:hover, #contact textarea:hover{
+    background-color: #F58426;
+    color: black;
+}
+
+#contact input:focus, #contact textarea:focus{
+    background-color: #BEC0C2;
+    color: black;
+}
+  
+#contact input#submit {
+    border: 0px;
+    border: 3px solid black;
+    width: 30%;
+    background-color: rgba(30, 108, 182, .1);
+    padding: 20px 0px;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+  
+#contact input#submit:hover {
+    background-color: #F58426;
+    width: 50%;
+    border: 4px solid black;
+    cursor: pointer;
+    color: black;
+}
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 481px) {
+    section#contact {
+        width: 100%;
+        padding: 0px 0px;
+        background-attachment: scroll;
+    }
+    h3#contactThree {
+        padding: 21px 0px;
+        font-size: 35px;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 41px;
+    }
+    div.contactCon {
+        width: 98%;
+        padding: 0px 0px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        background-attachment: scroll;
+    }
+}
+
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 482 pixels
+   ===================================================
+*/
+
+@media screen and (min-width: 482px){
+    section#contact {
+        width: 100%;
+        padding: 0px 0px;
+        background-attachment: scroll;
+    }
+    h3#contactThree {
+        padding-top: 20px;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 7%;
+        padding-right: 100px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    section#contact {
+        width: 100%;
+        margin-right: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    div.center {
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 993 pixels
+   ===================================================
+*/
+
+@media screen and (min-width: 993px){
+    form#contactform {
+        padding-top: 14px;
+        width: 100%;
+        margin-right: -190px;
+        margin-left: auto;
+    }
+}
+
+/* END OF CONTACT SECTION STYLING */
+
+/* START OF FOOTER SECTION STYLING */
+
+footer.footer-section {
+    padding: 1px 1px;
+    color: #F58426;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-shadow: black 2px 2px;
+}
+
+p#copy {
+    font-size: 15px;
+    margin-right: -85px;
+    margin-left: auto;
+}
+
+a#git {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span#name {
+    color: white;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-shadow: black 2px 2px;
+    transition: all 1s;
+}
+
+span#name:hover {
+    color: #F58426;
+}
+
+/* ============================================
+	Mobile Devices: 0 - 575 pixels
+   ============================================
+*/
+
+@media screen and (max-width: 575px) {
+    div.stack {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    p#copy {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        font-size: 16px;
+    }
+    p#design {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+}
+
+/* END OF FOOTER SECTION STYLING */
+

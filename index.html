@@ -1,0 +1,242 @@
+<!--
+    HTML Knicks Page
+    Author: James Jutt
+    Date: 1/8/19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Reset Stylesheet -->
+    <link href="css/reset.css" rel="stylesheet" />
+    <!-- Bootstrap CDN stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" defer></script>
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100|Coiny|Do+Hyeon|Markazi+Text|Notable" rel="stylesheet">
+    <!-- ANIMATE CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="images/backgrounds/title-logo.png" />
+    <title>THE KNICKS</title>
+    <!-- Main Stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Main JavaScript -->
+    <script src="js/games.js" type="text/javascript" defer></script>
+    <script src="js/upcoming_games.js" type="text/javascript" defer></script>
+</head>
+<body>
+<!--------------------- NAV BAR START ---------------------->
+<div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light animated slideInUp">
+        <img id="nav-logo" src="images/Backgrounds/nylogo.png" />
+        <a class="navbar-brand" id="navbrand" href="#contact">NEW YORK KNICKS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse animated slideInLeft" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#home">HOME</a>
+                <a class="nav-item nav-link" href="#roster">ROSTER</a>
+                <a class="nav-item nav-link" href="#games">GAMES</a>
+                <a class="nav-item nav-link" href="#history">HISTORY</a>
+                <a class="nav-item nav-link" href="#contact">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+<!---------------------  NAV BAR END --------------------->
+
+<!--------------------- HERO IMAGE START ----------------->
+    <div class="container hero-info animated slideInUp" id="home">
+        <div class="hero-info">
+            <h1 id="myTitle">NEW YORK KNICKS</h1>
+            <p id="info">The place for anything Knicks!</p>
+            <a href="#games"><button id="myBtn" type="button">Upcoming Games</button></a>
+        </div>
+    </div>
+</div>
+<!--------------------- HERO IMAGE END  --------------------->
+
+<!--------------------- ROSTER SECTION START  --------------->
+<section id="roster" class="roster-section">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="roster-title">
+                <h1 id="myRoster" class="header-font">THE LINEUP</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">        
+        <div class="card-box col-sm-4">
+            <div class="inner">
+                <div class="front">
+                    <img class="player-card" src="images/Roster_cards/mudiay.jpg" />
+                </div>
+                <div class="back">
+                    <h3 class="cardBack">Name: Emmanuel Mudiay</h3>
+                    <h3 class="cardBack">Age: March 5, 1996 (22)</h3>
+                    <h3 class="cardBack">Position: PG</h3>
+                    <h3 class="cardBack">Number: #1</h3>
+                    <h3 class="cardBack">Height: 6'5" </h3>
+                    <h3 class="cardBack">Salary: 3.1 Million USD (2016)</h3>
+                    <h3 class="cardBack">Drafted: 2015</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-box col-sm-4">
+            <div class="inner">
+                <div class="front">
+                    <img class="player-card hardaway" src="images/Roster_cards/hardaway.jpg" />
+                </div>
+                <div class="back">
+                    <h3 class="cardBack">Name: Tim Hardaway Jr.</h3>
+                    <h3 class="cardBack">Age: March 16, 1992 (26)</h3>
+                    <h3 class="cardBack">Position: SG</h3>
+                    <h3 class="cardBack">Number: #3 </h3>
+                    <h3 class="cardBack">Height: 6′6″</h3>
+                    <h3 class="cardBack">Salary: 16.5 Million USD (2017)</h3>
+                    <h3 class="cardBack">Drafted: 2013</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-box col-sm-4">
+            <div class="inner">
+                <div class="front">
+                    <img class="player-card knox" src="images/Roster_cards/knox.jpg" />
+                </div>
+                <div class="back">
+                    <h3 class="cardBack">Name: Kevin Knox</h3>
+                    <h3 class="cardBack">Age: August 11, 1999 (19)</h3>
+                    <h3 class="cardBack">Position: SF</h3>
+                    <h3 class="cardBack">Number: #20</h3>
+                    <h3 class="cardBack">Height: 6′9″</h3>
+                    <h3 class="cardBack">Salary: 3.7 Million USD (2018)</h3>
+                    <h3 class="cardBack">Drafted: 2018</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card-box col-sm-4">
+            <div class="inner">
+                <div class="front">
+                    <img class="player-card porzingis" src="images/Roster_cards/porzingis.jpg" />
+                </div>
+                <div class="back">
+                    <h3 class="cardBack">Name: Kristaps Porziņģis</h3>
+                    <h3 class="cardBack">Age: August 2, 1995 (23)</h3>
+                    <h3 class="cardBack">Position: PF</h3>
+                    <h3 class="cardBack">Number: #6</h3>
+                    <h3 class="cardBack">Height: 7′3″</h3>
+                    <h3 class="cardBack">Salary: 4.13 Million USD (2016)</h3>
+                    <h3 class="cardBack">Drafted: 2015</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-box col-sm-4">
+            <div class="inner">
+                <div class="front">
+                    <img class="player-card" src="images/Roster_cards/kanter.jpg" />
+                </div>
+                <div class="back">
+                    <h3 class="cardBack">Name: Enes Kanter</h3>
+                    <h3 class="cardBack">Age: May 20, 1992 (26)</h3>
+                    <h3 class="cardBack">Position: Center</h3>
+                    <h3 class="cardBack">Number: #00</h3>
+                    <h3 class="cardBack">Height: 6′11″</h3>
+                    <h3 class="cardBack">Salary: 17.15 million USD (2017)</h3>
+                    <h3 class="cardBack">Drafted: 2011</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-box col-sm-4">
+            <div class="inner">
+                <div class="front">
+                    <img class="player-card" src="images/Roster_cards/fizdale.jpg" />
+                </div>
+                <div class="back">
+                    <h3 class="cardBack">Name: David Fizdale</h3>
+                    <h3 class="cardBack">Age: June 16, 1974 (44)</h3>
+                    <h3 class="cardBack">Position: Coach</h3>
+                    <h3 class="cardBack">Salary: 10.2 million USD (2018) </h3>
+                    <h3 class="cardBack">Years As Coach: 1 Season!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------- ROSTER SECTION END  --------------------->
+
+<!--------------------- UPCOMING GAMES SECTION START --------------------->
+<section id="games" class="games-section">
+    <div class="container upcoming">
+        <h1 id="uGames" class="header-font">UPCOMING GAMES</h1>
+        <div id="upcoming-games"></div>
+    </div>
+</section>
+<!--------------------- UPCOMING GAMES SECTION END  --------------------->
+
+<!--------------------- HISTORY SECTION START --------------->
+<section id="history">
+    <div class="container content-wrap">
+        <div class="col-md-12">
+            <h1 id="history-head" class="header-font">HISTORY</h1>
+        </div>
+        <div class="history-content">
+            <p class="my-content" id="content-one">&nbsp;The New York Knickerbockers, known familiarly as the Knicks, are an American professional National Basketball Association team based in New York City. The organization was a founding member of the Basketball Association of America in 1946 and would join the NBA after the BAA and National Basketball League merged.</p>
+            <p class="my-content" id="content-two">&nbsp;The Knicks are one of only two teams of the original National Basketball Association still located in its original city (the other being the Boston Celtics). The "Knickerbocker" name comes from the pseudonym used by Washington Irving for his A History of New York, which name became applied to the descendants of the original Dutch settlers of what later became New York, and later, by extension, to New Yorkers in general.</p>
+            <p class="my-content" id="content-two">&nbsp;Since 2000, the Knicks have struggled to regain their former glory, but won its first division title in 19 years in 2012–13, led by a core of forwards Carmelo Anthony and Amar'e Stoudemire. They were eventually eliminated in the Eastern Conference semi-finals by the Indiana Pacers, and have failed to make the playoffs since.</p>
+        </div>
+    </div>
+</section>
+
+<!--------------------- HISTORY SECTION END ----------------->
+
+<!--------------------- CONTACT SECTION START --------------------->
+<div id="wrap">
+    <section id="contact">
+        <div class="container contactCon">
+            <div class="row centered center">
+                <h3 id="contactThree" class="header-font">CONTACT US</h3>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <form method="GET" action="#" id="contactform">
+                            <input type="text" name="name" placeholder="Name" autocomplete="off" required />
+                            <input type="text" name="email" placeholder="E-mail Address" autocomplete="off" required />
+                            <input type="text" name="player" placeholder="Favorite Player on the knicks" autocomplete="off" required />
+                            <textarea style="resize: none;" name="comment" rows="7" placeholder="Suggestion Box" autocomplete="off" required></textarea>
+                            <input type="submit" id="submit" value="SUBMIT" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!--------------------- CONTACT SECTION END --------------------->
+
+<!--------------------- FOOTER SECTION START -------------------->
+    <footer class="footer-section">
+        <div class="container-fluid">
+            <div class="row stack">
+                <div class="col-sm-6 text-right">
+                   <p id="copy">&copy; Copyright 2019</p>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <p id="design">Design By <a id="git" href="https://github.com/jamesjutt"><span id="name">James Jutt</a></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--------------------- FOOTER SECTION END -------------------->
+</body>
+</html>
